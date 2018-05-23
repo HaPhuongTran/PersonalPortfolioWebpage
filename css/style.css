@@ -1,15 +1,55 @@
-body {margin: 0px; padding: 0px;}
-#banner {width: 100%;}
-#banner img {width: 100%; height: 65%;}
-h1 {text-align: center; color: #009900;}
-.shape {width: 5%; border: 1px solid #009900; margin: auto;}
-.cont { width: 70%; height: 300px; margin: auto; margin-top: 20px;}
-.about_img {width: 50%; float: left;}
-.about_img img {width: 90%; height: 300px;}
-.content { width: 50%; float: left;}
-.content p {font-size: 25px; text-align: justify; padding-top: 30px;}
+/*body {margin: 0px; padding: 0px; width: 100%;}
+*/
+@font-face {
+    font-family: 'JosefinSans-Light'; /*a name to be used later*/
+    src: url('../font/josefin-sans/JosefinSans-Light.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'JosefinSans-Regular'; /*a name to be used later*/
+    src: url('../font/josefin-sans/JosefinSans-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Oswald-DemiBold'; /*a name to be used later*/
+    src: url('../font/oswald/Oswald-DemiBold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Oswald-Regular'; /*a name to be used later*/
+    src: url('../font/oswald/Oswald-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'JosefinSans-Thin'; /*a name to be used later*/
+    src: url('../font/josefin-sans/JosefinSans-Thin.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Oswald-ExtraLight'; /*a name to be used later*/
+    src: url('../font/oswald/Oswald-ExtraLight.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'JosefinSans-Bold'; /*a name to be used later*/
+    src: url('../font/josefin-sans/JosefinSans-Bold.ttf'); /*URL to font*/
+}
+#contain_head {height: 1085px;}
+#banner {width: 100%; position: absolute; z-index:1; }
+#contain {margin-top: 5%;}
+#contain h1 {text-align: center; color: #990033; margin-top: 20px;}
+.shape {width: 5%; border: 1px solid #990033; margin: auto;}
+.cont { width: 70%; height: 250px; margin: auto; margin-top: 20px;}
 #cont2 { width: 70%; margin: auto; margin-top: 20px;height: 455px;}
-.cas { border-radius: 7px; width: 30%; border: 1px solid #009900; float: left; margin-left: 30px; height: 455px;}
-.shape2 {border-radius: 999px; border: 1px solid #009900; width: 50px; height: 50px; margin-left: 43%; margin-top: 20px;}
-.cas h2 {text-align: center;}
-.cas p {text-align: justify;}
+.content p { color: #000000 ; font-size: 25px; text-align: center; padding-top: 30px; font-family:JosefinSans-Thin;}
+#butto {width:10%; margin: auto;}
+#butto button {color: #990033; background: #990033; border: 1px #990033 solid; border-radius: 4px; outline: none; padding: 5px 15px; color: white; font-family: JosefinSans-Thin; }
+.cas { border-radius: 7px; width: 30%; border: 1px solid #990033; float: left; margin-left: 30px; height: 455px;}
+.shape2 {border-radius: 999px; border: 1px solid #990033; width: 50px; height: 50px; margin-left: 43%; margin-top: 20px;}
+.cas h2 {text-align: center; font-family:Oswald-ExtraLight; color: #00B2EE;}
+.cas p {text-align: center; font-family:JosefinSans-Bold;}
+@media(max-width:1000px){.cas {margin-left: 10px;}}  /*view*/
+#menu {position: absolute; z-index: 5; margin-top: 30px; margin-left: 70%;}
+#menu a {text-decoration:none; color: white; font-family: JosefinSans-Regular;  }
+.sub {float: left; width: 100px; }
+.sub p { text-align: center; font-size: 18px; }
+#pic {margin-top: 20%; margin-left: 35%; color: white; width: 30%; position: absolute; z-index: 5; text-align: center; border: 3px solid white;}
+#p1 {font-family: JosefinSans-Light; font-size: 40px;}
+#p2{ font-family: Oswald-DemiBold; font-size: 50px; }
+#p3 {font-family: Oswald-Regular; font-size: 30px;}
+@media(max-width: 1000px){#pic {margin-left: 250px; margin-top: 250px;}}
