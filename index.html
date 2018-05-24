@@ -4,23 +4,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 	<!-- header -->
 		<div id="contain_head">
-			<div id="banner">
+			<a name="Home"></a>
+			<div id="banner" >
 				<img src="image/banner_hnh.png">
 			</div> 	
-
 			<div id="menu">
-				<div class="sub"><p><a href="#">Home</a></p></div>
-				<div class="sub"><p><a href="#">About Me</a></p></div>
-				<div class="sub"><p><a href="#">My Product</a></p></div>
-				<div class="sub"><p><a href="#">Contact Me</a></p></div>
+				<div class="sub"><p><a href="index.html">Home</a></p></div>
+				<div class="sub"><p><a href="#About me">About Me</a></p></div>
+				<div class="sub"><p><a href="#My Product">My Product</a></p></div>
+				<div class="sub"><p><a href="#Contact Me">Contact Me</a></p></div>
 			</div>
 			<div id="pic">
 				<p id="p1">Welcome To My Site!</p>
@@ -29,19 +30,32 @@
 			</div>
 		</div>
 		<!-- end header -->
-
+		<a href="#Home"><button id="button-top" title="go to top"> Back to top
+			</button></a>
+			<script>
+				window.onscroll = function(){scrollFunction ()};
+				function scrollFunction(){
+					if(document.body.scrollTop>500 || document.documentElement.scrollTop >500){
+						document.getElementById("button-top").style.display = "block";
+					}
+					else {
+						document.getElementById("button-top").style.display = "none";
+					}
+				}
+			</script>
 		<div id="contain">
 			<h1>PROFILE</h1>
 			<div class="shape">
 			</div>
 			<div class="cont">
 				<div class="content">
-					<p>My name is Tran Ha Phuong. I am studying in Can Tho University and i be training in TMA Solutions. I study Data Communication and Computer Network in the school. Continue reading to get more than information.</p>
+					<p style="padding-top: 60px;">My name is Tran Ha Phuong. I am studying in Can Tho University and i be training in TMA Solutions. I study Data Communication and Computer Network in the school. Continue reading to get more than information.</p>
 				</div>
 				<div id="butto">
-					<a href="https://p.w3layouts.com/demos_new/template_demo/20-10-2017/c_resume-demo_Free/760142481/web/index.html" target="_blank"><button type="button">HIRE ME</button> </a>
+					<a href="mailto:tranhaphuong13@gmail.com" ><button type="button">HIRE ME</button> </a>
 				</div>
 			</div>
+			<a name="About me"></a>
 			<h1>About Me</h1>
 			<div class="shape"></div>
 			<div id="cont2">
@@ -79,16 +93,90 @@
 					</p>
 				</div>
 			</div>
+			<a name="My Product"></a>
 			<h1>My Product</h1>
 			<div class="shape"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3">
-						<img src="image/a5.jpg">
-					</div>
+			<div class="row content-row">
+				<div class="col-sm-3 product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/a5.png"></a>
+				</div>
+				<div class="col-sm-3 Product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/a5.png"></a>
+				</div>
+				<div class="col-sm-3 product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/a5.png"></a>
+				</div>
+				<div class="col-sm-3 product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/a5.png"></a>
 				</div>
 			</div>
-			<div id="bottom">fdfdsf</div>
+			<div class="row content-row">
+				<div class="col-sm-3 product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/a5.jpg"></a>
+				</div>
+				<div class="col-sm-3 Product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/a5.jpg"></a>
+				</div>
+				<div class="col-sm-3 product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/a5.jpg"></a>
+				</div>
+				<div class="col-sm-3 product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/a5.jpg"></a>
+				</div>
+			</div>
+			<div class="row content-row">
+				<div class="col-sm-3 product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/b.jpg"></a>
+				</div>
+				<div class="col-sm-3 Product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/b.jpg"></a>
+				</div>
+				<div class="col-sm-3 product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/b.jpg"></a>
+				</div>
+				<div class="col-sm-3 product-item">
+					<a href="https://mp3.zing.vn" target="_blank"><img src="image/b.jpg"></a>
+				</div>
+			</div>
 		</div>
-</body>                                               
+		<a name="Contact Me"></a>
+		<div id="contain-bottom">
+			<div id="Contact">
+				<form>
+					<label>First Name</label>
+					<input type="text" name="" placeholder="Your name">
+					<label>Last Name</label>
+					<input type="text" name="" placeholder="Your last name">
+					<label>Country</label>
+					<select>
+						<option>Australia</option>
+						<option>Canada</option>
+						<option>China</option>
+						<option>USA</option>
+						<option>Vietnam</option>
+					</select>
+					<label>Subject</label>
+					<textarea placeholder="Write something"></textarea>
+					<input id="Contact_button" type="submit" name="" value="Submit">
+				</form>
+				
+			</div>
+			<div class="social-icon">
+					<a href="#" class="fa fa-facebook"></a>
+			</div>
+			<div class="social-icon" >
+					<a href="#" class="fa fa-instagram"></a>
+			</div>
+			<div class="social-icon" >
+					<a href="#" class="fa fa-skype"></a>
+			</div>
+			<div class="social-icon" >
+					<a href="#" class="fa fa-google"></a>
+			</div>
+			<div class="social-icon" >
+					<a href="#" class="fa fa-youtube"></a>
+			</div>
+		</div>
+</body> 
+                                              
 </html>
