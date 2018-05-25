@@ -48,15 +48,18 @@
 #menu a {text-decoration:none; color: white; font-family: JosefinSans-Regular;  }
 .sub {float: left; width: 100px; }
 .sub p { text-align: center; font-size: 18px; }
-#pic {margin-top: 20%; margin-left: 35%; color: white; width: 30%; position: absolute;  text-align: center; border: 3px solid white;}
+#infor {margin-top: 20%; margin-left: 35%; color: white; width: 30%; position: absolute;  text-align: center; border: 3px solid white;}
+#infor:hover {transform: scale(1.5);  transition: all 1s ease; /*view*/}
 #p1 {font-family: JosefinSans-Light; font-size: 40px;}
 #p2{ font-family: Oswald-DemiBold; font-size: 50px; }
 #p3 {font-family: Oswald-Regular; font-size: 30px;}
-.content-row{ padding-top: 20px !important; padding-bottom: 20px !important; width: 70%; margin: auto !important;}
-.product-item{ padding: 0px !important; padding-left: 1% !important; }
-#contact { margin: 20px; opacity: 0.8; border-radius: 5px; background-color: #f2f2f2; padding: 20px; width: 80%;/* margin: auto; */background: white; font-family: JosefinSans-Thin; margin-top: 20px; float: left; }
-input[type=text], select, textarea { color: black; width: 100%;  padding: 12px; border: 1px solid #990033; border-radius: 4px;box-sizing: border-box; /*view*/ margin-top: 6px; margin-bottom: 16px;resize: vertical; /*view*/}
-#Contact_button{ margin-top: 20px; color: white; background-color: #990033; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; /*view*/}
+.content-row{ padding-top: 20px !important; padding-bottom: 20px !important; width: 60%; margin: auto !important;}
+.product-item{ padding: 0px !important; padding-left: 1px !important; }
+.product-item img {box-shadow: 5px 10px 18px #828282; width:80%; height: 25%;}
+.product-item:hover img {transform:scale(1.1); transition: all 1s ease;}
+#contact { margin: 20px; opacity: 0.8; border-radius: 5px; background-color: #f2f2f2; padding: 20px; width: 80%; background: white; font-family: JosefinSans-Thin; margin-top: 20px; float: left; }
+input[type=text], select, textarea { color: black; width: 100%;  padding: 12px; border: 1px solid #990033; border-radius: 4px;box-sizing: border-box; /*view*/ margin-top: 6px; margin-bottom: 16px; /*view*/}
+#Contact_button{ margin-top: 20px; color: white; background-color: #990033; padding: 10px 20px; border: none; border-radius: 4px; /*cursor: pointer; *//*view*/}
 .social-icon { margin-left: 10%; width: 70px; margin-top: 25px; float: left; }
 .fa {padding: 20px; width: 70px; text-align: center; text-decoration: none !important;}
 .fa-facebook{background:#3B5998; color: white; font-size: 30px !important;}
@@ -66,3 +69,4 @@ input[type=text], select, textarea { color: black; width: 100%;  padding: 12px; 
 .fa-youtube {background: #bb0000; color: white; font-size: 30px !important;}
 #contain-bottom {height: 50%;}
 #button-top{float: right; display: none; position:fixed; border:none; outline: none; background-color: #990033;color: white; font-size: 18px; bottom: 20px; right: 30px; padding: 15px; border-radius: 6px;}
+
