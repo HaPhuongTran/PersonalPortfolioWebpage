@@ -8,16 +8,16 @@ window.onscroll = function(){scrollFunction ()};
 		}
 	}
 	document.getElementById("button-top").addEventListener("click", function(e){
-		$('html,body').animate({scrollTop:0});
+		$('html,body').animate({scrollTop:0}, 800);
 	});
 
 	document.getElementById("scroll-AB").addEventListener("click", function(e){
-		$('html,body').animate({scrollTop:(1300)});
+		$('html,body').animate({scrollTop:$("#about_me").position().top});
 	});
 	document.getElementById("scroll-MP").addEventListener("click", function(e){
-		$('html,body').animate({scrollTop:(2000)});
+		$('html,body').animate({scrollTop:$("#my_product").position().top});
 	});
 
 	document.getElementById("scroll-CM").addEventListener("click", function(e){
-		$('html,body').animate({scrollTop:(2700)});
+		$('html,body').animate({scrollTop:$("#Contact").position().top});
 	});
